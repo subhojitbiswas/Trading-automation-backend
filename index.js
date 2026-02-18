@@ -1,12 +1,13 @@
+require('dotenv').config();
 const angelOne = require("./angelOneV2");
 const express = require("express");
 // const bodyParser = require("body-parser");
 const { Server } = require("socket.io");
 const http = require("http");
 let { WebSocketV2 } = require("smartapi-javascript");
-const API_KEY = "Yhu7TseI";
-const CLIENT_ID = "S58052271";
-const PASSWORD = "9932";
+const API_KEY = process.env.API_KEY;
+const CLIENT_ID = process.env.CLIENT_ID;
+const PASSWORD = process.env.PASSWORD;
 const moment = require('moment');
 // let expiry = "06MAR25", exchange = 'NIFTY', lotSize = 50;
 const interval = 'ONE_MINUTE';
