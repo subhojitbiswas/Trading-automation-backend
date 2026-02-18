@@ -1,0 +1,27 @@
+{
+  "name": "project_scalp",
+  "version": "1.0.0",
+  "description": "Integrate trading view with broker angel one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "webSocket": "nodemon angelOneWebSocket.js"
+  },
+  "author": "Subhojit Biswas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-ws": "^5.0.2",
+    "http": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "nodemon": "^3.1.9",
+    "otplib": "^12.0.1",
+    "smartapi-javascript": "^1.0.27",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.1"
+  }
+}
